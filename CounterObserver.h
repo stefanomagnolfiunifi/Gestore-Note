@@ -1,0 +1,27 @@
+//
+// Created by Stefano  Magnolfi on 09/08/2023.
+//
+
+#ifndef GESTORENOTE_COUNTEROBSERVER_H
+#define GESTORENOTE_COUNTEROBSERVER_H
+#include "Observer.h"
+#include "VariousCollection.h"
+#include <iostream>
+
+class CounterObserver : public Observer{
+public:
+    explicit CounterObserver(VariousCollection* c): noteCount(0), collection(c){
+        collection->addObserver(this);
+    };
+    ~CounterObserver(){
+        collection->removeObserver(this);
+    }
+    void update(int c) override{
+        noteCount = c;
+        std::cout<<"The count of notes in this collection is: "<<noteCount<<std::endl;
+    }
+private:
+    int noteCount;
+    VariousCollection* collection;
+};
+#endif //GESTORENOTE_COUNTEROBSERVER_H

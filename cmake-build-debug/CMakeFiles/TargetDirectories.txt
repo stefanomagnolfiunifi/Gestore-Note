@@ -1,0 +1,3 @@
+C:/Users/stefa/CLionProjects/Gestore-Note/cmake-build-debug/CMakeFiles/GestoreNote.dir
+C:/Users/stefa/CLionProjects/Gestore-Note/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/stefa/CLionProjects/Gestore-Note/cmake-build-debug/CMakeFiles/rebuild_cache.dir
