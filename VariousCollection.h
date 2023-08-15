@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include "Collection.h"
-#include "Observer.h"
+#include "Subject.h"
 
 class VariousCollection : public Collection, public Subject{
 public:

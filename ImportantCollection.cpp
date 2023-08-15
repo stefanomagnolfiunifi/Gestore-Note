@@ -3,3 +3,9 @@
 //
 
 #include "ImportantCollection.h"
+ImportantCollection* ImportantCollection::instance = nullptr;
+ImportantCollection* ImportantCollection::getInstance() {
+    if(instance == nullptr)
+        instance = new ImportantCollection();
+    return instance;
+}

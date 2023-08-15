@@ -18,7 +18,7 @@ public:
     }
     void update(int c) override{
         noteCount = c;
-        std::cout<<"The count of notes in this collection is: "<<noteCount<<std::endl;
+        std::cout<<"The count of notes in "<<collection->getName()<<" collection is: "<<noteCount<<std::endl;
     }
 private:
     int noteCount;

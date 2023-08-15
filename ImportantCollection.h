@@ -10,8 +10,10 @@
 #include "Observer.h"
 class ImportantCollection : public Collection{
 public:
+    static ImportantCollection* getInstance();
+private:
     ImportantCollection(): Collection("Importants"){};
-
+    static ImportantCollection* instance;
 };
 
 

@@ -1,0 +1,24 @@
+# ninja log v5
+16	832	7138127049709328	CMakeFiles/GestoreNote.dir/ImportantCollection.cpp.obj	c2f778973d16c146
+15	1005	7134022951409495	build.ninja	45c8b68d061c2b8
+25	742	7138127048819329	CMakeFiles/GestoreNote.dir/Nota.cpp.obj	85f7888e0d125572
+5	889	7138127050279164	CMakeFiles/GestoreNote.dir/main.cpp.obj	1fd419ac8fedf59b
+33	722	7138127048605304	CMakeFiles/GestoreNote.dir/VariousCollection.cpp.obj	be36c403846f2379
+890	1043	7138127051759435	GestoreNote.exe	5dc6c123a471f6b9
+18	734	7138128962361274	CMakeFiles/GestoreNote.dir/Nota.cpp.obj	85f7888e0d125572
+33	740	7138128962402419	CMakeFiles/GestoreNote.dir/VariousCollection.cpp.obj	be36c403846f2379
+25	846	7138128963484488	CMakeFiles/GestoreNote.dir/ImportantCollection.cpp.obj	c2f778973d16c146
+7	911	7138128964142635	CMakeFiles/GestoreNote.dir/main.cpp.obj	1fd419ac8fedf59b
+911	1061	7138128965599840	GestoreNote.exe	5dc6c123a471f6b9
+22	889	7138129320635495	CMakeFiles/GestoreNote.dir/Nota.cpp.obj	85f7888e0d125572
+29	924	7138129321062535	CMakeFiles/GestoreNote.dir/VariousCollection.cpp.obj	be36c403846f2379
+13	996	7138129321812891	CMakeFiles/GestoreNote.dir/ImportantCollection.cpp.obj	c2f778973d16c146
+5	1093	7138129322734728	CMakeFiles/GestoreNote.dir/main.cpp.obj	1fd419ac8fedf59b
+1093	1273	7138129324509113	GestoreNote.exe	5dc6c123a471f6b9
+15	734	7138130891897811	CMakeFiles/GestoreNote.dir/Nota.cpp.obj	85f7888e0d125572
+31	754	7138130892082110	CMakeFiles/GestoreNote.dir/VariousCollection.cpp.obj	be36c403846f2379
+24	842	7138130892992048	CMakeFiles/GestoreNote.dir/ImportantCollection.cpp.obj	c2f778973d16c146
+5	928	7138130893862138	CMakeFiles/GestoreNote.dir/main.cpp.obj	1fd419ac8fedf59b
+928	1075	7138130895298032	GestoreNote.exe	5dc6c123a471f6b9
+5	662	7138132072875062	CMakeFiles/GestoreNote.dir/main.cpp.obj	1fd419ac8fedf59b
+663	819	7138132074387636	GestoreNote.exe	5dc6c123a471f6b9
