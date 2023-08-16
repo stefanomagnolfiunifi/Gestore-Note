@@ -7,20 +7,20 @@
 
 #include <iostream>
 #include <list>
-class Collection;
 class Nota {
 public:
-    Nota(const std::string& title,const std::string& text, Collection& collection, bool blocked = false): title(title), text(text), collection(&collection), blocked(blocked){
-        addToCollection(&collection);
-    };
+    Nota(const std::string& title,const std::string& text, bool blocked = false): title(title), text(text), blocked(blocked){};
     const std::string &getTitle() const;
     void setTitle(const std::string &title);
     const std::string &getText() const;
     void setText(const std::string &text);
     bool isBlocked() const;
-    Collection *getCollection() const;
-    void setCollection(Collection *collection);
-    void addToCollection(Collection *collection);
+    bool isBelonged() const;
+    bool isImportant() const;
+    void setImportant();
+    void setNotImportant();
+    void setBelong();
+    void setNotBelong();
     void block();
     void unblock();
     void modify(const std::string& ti, const std::string& te, bool b);
@@ -30,7 +30,8 @@ private:
     std::string title;
     std::string text;
     bool blocked;
-    Collection* collection;
+    bool belongToCollection = false;
+    bool important = false;
 };
 
 

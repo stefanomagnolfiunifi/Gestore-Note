@@ -12,8 +12,12 @@ int main() {
     CounterObserver counterObserver1(&collection1);
     CounterObserver counterObserver2(&collection2);
 
-    Nota nota1("Titolo Nota1", "Testo Nota1", collection1);
-    Nota nota2("Titola Nota2", "Testo Nota2", collection1);
+    Nota nota1("Titolo Nota1", "Testo Nota1");
+    Nota nota2("Titola Nota2", "Testo Nota2");
+
+    collection1.addNote(nota1);
+    collection2.addNote(nota2);
+    collection1.addNote(nota2);
 
     collection1.printAllNotes();
     collection1.removeNote(nota1);

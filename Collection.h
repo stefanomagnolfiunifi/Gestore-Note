@@ -11,14 +11,17 @@ class Collection{
 public:
     explicit Collection(const std::string& name):name(name){};
     //virtual ~Collection() = 0;
-    virtual void addNote(const Nota& n){
-        if(!n.isBlocked())
-            notesList.push_back(n);
+    virtual void addNote(Nota& nota){
+        if(!nota.isBlocked())
+            notesList.push_back(nota);
     }
-    virtual void removeNote(const Nota& n){
-        auto it=std::find(notesList.begin(), notesList.end(), n);
-        if(it!=notesList.end())
+    virtual bool removeNote(Nota& nota){
+        auto it=std::find(notesList.begin(), notesList.end(), nota);
+        if(it!=notesList.end()){
             notesList.erase(it);
+            return true;
+        }
+        return false;
     }
 
     virtual void printAllNotes(){

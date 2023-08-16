@@ -21,6 +21,15 @@ void Nota::setText(const std::string &newText) {
         Nota::text = newText;
     }
 }
+bool Nota::isBelonged() const {
+    return belongToCollection;
+}
+void Nota::setBelong() {
+    belongToCollection = true;
+}
+void Nota::setNotBelong() {
+    belongToCollection = false;
+}
 void Nota::block(){
     blocked = true;
 }
@@ -31,6 +40,17 @@ bool Nota::isBlocked() const {
     return blocked;
 }
 
+bool Nota::isImportant() const {
+    return important;
+}
+
+void Nota::setImportant() {
+    important = true;
+}
+
+void Nota::setNotImportant() {
+    important = false;
+}
 void Nota::modify(const std::string& ti, const std::string& te, bool b){
     if(!blocked){
         title = ti;
@@ -40,15 +60,4 @@ void Nota::modify(const std::string& ti, const std::string& te, bool b){
 }
 bool Nota::operator==(const Nota& n) const{
     return title==n.title;
-}
-void Nota::addToCollection(Collection *collection){
-    Nota::collection->addNote(*this);
-}
-Collection *Nota::getCollection() const {
-    return collection;
-}
-void Nota::setCollection(Collection *collection) {
-    Nota::collection->removeNote(*this);
-    Nota::collection = collection;
-    Nota::addToCollection(collection);
 }

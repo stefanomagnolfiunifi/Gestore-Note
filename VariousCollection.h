@@ -12,13 +12,20 @@
 class VariousCollection : public Collection, public Subject{
 public:
     explicit VariousCollection(const std::string& n):Collection(n){};
-    void addNote(const Nota& n) override{
-        Collection::addNote(n);
-        notify();
+    void addNote(Nota& nota) override{
+        if(!nota.isBelonged()){
+            Collection::addNote(nota);
+            nota.setBelong();
+            notify();
+        }
     }
-    void removeNote(const Nota& n) override{
-        Collection::removeNote(n);
-        notify();
+    bool removeNote(Nota& nota) override{
+        if(Collection::removeNote(nota)){
+            nota.setNotBelong();
+            notify();
+            return true;
+        }
+        return false;
     }
     void addObserver(Observer* o) override{
         observers.push_back(o);

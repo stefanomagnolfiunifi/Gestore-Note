@@ -11,6 +11,8 @@
 class ImportantCollection : public Collection{
 public:
     static ImportantCollection* getInstance();
+    void addNote(Nota &nota) override;
+    bool removeNote(Nota &nota) override;
 private:
     ImportantCollection(): Collection("Importants"){};
     static ImportantCollection* instance;
