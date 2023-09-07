@@ -58,6 +58,6 @@ void Nota::modify(const std::string& ti, const std::string& te, bool b){
         blocked = b;
     }
 }
-bool Nota::operator==(const Nota& n) const{
-    return title==n.title;
+bool Nota::operator==(const Nota& nota) const{
+    return title==nota.title;
 }

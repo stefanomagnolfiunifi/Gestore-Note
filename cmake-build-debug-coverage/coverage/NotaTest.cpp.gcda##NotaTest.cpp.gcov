@@ -1,0 +1,1036 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/test/NotaTest.cpp
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\NotaTest.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\NotaTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../Nota.h"
+        -:    3:
+        2:    4:TEST(Nota, checkConstructor){
+        2:    5:    Nota nota("testTitle", "testText");
+       1*:    6:    EXPECT_EQ("testTitle", nota.getTitle());
+       1*:    7:    EXPECT_EQ("testText", nota.getText());
+       1*:    8:    EXPECT_FALSE(nota.isBlocked());
+        3:    9:    Nota nota2("testTitle2", "testText2",true);
+       1*:   10:    EXPECT_EQ("testTitle2", nota2.getTitle());
+       1*:   11:    EXPECT_EQ("testText2", nota2.getText());
+       1*:   12:    EXPECT_TRUE(nota2.isBlocked());
+        1:   13:}
+------------------
+_ZN26Nota_checkConstructor_Test8TestBodyEv:
+function _ZN26Nota_checkConstructor_Test8TestBodyEv called 1 returned 100% blocks executed 27%
+        1:    4:TEST(Nota, checkConstructor){
+        2:    5:    Nota nota("testTitle", "testText");
+        1:    5-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    5-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:    5-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:    5-block  3
+    $$$$$:    5-block  4
+    $$$$$:    5-block  5
+    $$$$$:    5-block  6
+       1*:    6:    EXPECT_EQ("testTitle", nota.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    6-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    6-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:    6-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    6-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    6-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:    6-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:    6-block  6
+call   21 never executed
+call   22 never executed
+        1:    6-block  7
+call   23 returned 1
+    $$$$$:    6-block  8
+call   24 never executed
+    $$$$$:    6-block  9
+    $$$$$:    6-block 10
+call   25 never executed
+    $$$$$:    6-block 11
+    $$$$$:    6-block 12
+call   26 never executed
+       1*:    7:    EXPECT_EQ("testText", nota.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    7-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    7-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:    7-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    7-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    7-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:    7-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:    7-block  6
+call   21 never executed
+call   22 never executed
+        1:    7-block  7
+call   23 returned 1
+    $$$$$:    7-block  8
+call   24 never executed
+    $$$$$:    7-block  9
+    $$$$$:    7-block 10
+call   25 never executed
+    $$$$$:    7-block 11
+    $$$$$:    7-block 12
+call   26 never executed
+       1*:    8:    EXPECT_FALSE(nota.isBlocked());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    8-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    8-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:    8-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    8-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    8-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:    8-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:    8-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:    8-block  7
+call   25 returned 1
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+call   26 never executed
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+call   27 never executed
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+call   28 never executed
+    $$$$$:    8-block 14
+    $$$$$:    8-block 15
+call   29 never executed
+        3:    9:    Nota nota2("testTitle2", "testText2",true);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    9-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:    9-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:    9-block  2
+    $$$$$:    9-block  3
+    $$$$$:    9-block  4
+    $$$$$:    9-block  5
+    $$$$$:    9-block  6
+call   15 never executed
+       1*:   10:    EXPECT_EQ("testTitle2", nota2.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   10-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   10-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   10-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   10-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   10-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   10-block  6
+call   21 never executed
+call   22 never executed
+        1:   10-block  7
+call   23 returned 1
+    $$$$$:   10-block  8
+call   24 never executed
+    $$$$$:   10-block  9
+    $$$$$:   10-block 10
+call   25 never executed
+    $$$$$:   10-block 11
+    $$$$$:   10-block 12
+call   26 never executed
+       1*:   11:    EXPECT_EQ("testText2", nota2.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   11-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   11-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   11-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   11-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   11-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   11-block  6
+call   21 never executed
+call   22 never executed
+        1:   11-block  7
+call   23 returned 1
+    $$$$$:   11-block  8
+call   24 never executed
+    $$$$$:   11-block  9
+    $$$$$:   11-block 10
+call   25 never executed
+    $$$$$:   11-block 11
+    $$$$$:   11-block 12
+call   26 never executed
+       1*:   12:    EXPECT_TRUE(nota2.isBlocked());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   12-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   12-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   12-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   12-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   12-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:   12-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:   12-block  7
+call   25 returned 1
+    $$$$$:   12-block  8
+    $$$$$:   12-block  9
+call   26 never executed
+    $$$$$:   12-block 10
+    $$$$$:   12-block 11
+call   27 never executed
+    $$$$$:   12-block 12
+    $$$$$:   12-block 13
+call   28 never executed
+    $$$$$:   12-block 14
+    $$$$$:   12-block 15
+call   29 never executed
+        1:   13:}
+call    0 returned 1
+    $$$$$:   13-block  0
+call    1 never executed
+------------------
+_ZN26Nota_checkConstructor_TestC1Ev:
+function _ZN26Nota_checkConstructor_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:    4:TEST(Nota, checkConstructor){
+        1:    4-block  0
+call    0 returned 1
+------------------
+        -:   14:
+        2:   15:TEST(Nota, checkSetters){
+        2:   16:    Nota nota("testTitle", "testText");
+        1:   17:    nota.setText("newText");
+        1:   18:    nota.setTitle("newTitle");
+       1*:   19:    EXPECT_EQ("newTitle", nota.getTitle());
+       1*:   20:    EXPECT_EQ("newText", nota.getText());
+        1:   21:    nota.block();
+        1:   22:    nota.setText("newNewText");
+        1:   23:    nota.setTitle("newNewTitle");
+       1*:   24:    EXPECT_EQ("newTitle", nota.getTitle());
+       1*:   25:    EXPECT_EQ("newText", nota.getText());
+        1:   26:}
+------------------
+_ZN22Nota_checkSetters_Test8TestBodyEv:
+function _ZN22Nota_checkSetters_Test8TestBodyEv called 1 returned 100% blocks executed 34%
+        1:   15:TEST(Nota, checkSetters){
+        2:   16:    Nota nota("testTitle", "testText");
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   16-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:   16-block  3
+    $$$$$:   16-block  4
+    $$$$$:   16-block  5
+    $$$$$:   16-block  6
+        1:   17:    nota.setText("newText");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   17-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   17-block  2
+call    9 never executed
+    $$$$$:   17-block  3
+    $$$$$:   17-block  4
+call   10 never executed
+    $$$$$:   17-block  5
+        1:   18:    nota.setTitle("newTitle");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   18-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   18-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   18-block  2
+call    9 never executed
+    $$$$$:   18-block  3
+    $$$$$:   18-block  4
+call   10 never executed
+    $$$$$:   18-block  5
+       1*:   19:    EXPECT_EQ("newTitle", nota.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   19-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   19-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   19-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   19-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   19-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   19-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   19-block  6
+call   21 never executed
+call   22 never executed
+        1:   19-block  7
+call   23 returned 1
+    $$$$$:   19-block  8
+call   24 never executed
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+call   25 never executed
+    $$$$$:   19-block 11
+    $$$$$:   19-block 12
+call   26 never executed
+       1*:   20:    EXPECT_EQ("newText", nota.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   20-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   20-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   20-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   20-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   20-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   20-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   20-block  6
+call   21 never executed
+call   22 never executed
+        1:   20-block  7
+call   23 returned 1
+    $$$$$:   20-block  8
+call   24 never executed
+    $$$$$:   20-block  9
+    $$$$$:   20-block 10
+call   25 never executed
+    $$$$$:   20-block 11
+    $$$$$:   20-block 12
+call   26 never executed
+        1:   21:    nota.block();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:    nota.setText("newNewText");
+        1:   22-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   22-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   22-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   22-block  3
+call    9 never executed
+    $$$$$:   22-block  4
+    $$$$$:   22-block  5
+call   10 never executed
+    $$$$$:   22-block  6
+        1:   23:    nota.setTitle("newNewTitle");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   23-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   23-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   23-block  2
+call    9 never executed
+    $$$$$:   23-block  3
+    $$$$$:   23-block  4
+call   10 never executed
+    $$$$$:   23-block  5
+       1*:   24:    EXPECT_EQ("newTitle", nota.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   24-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   24-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   24-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   24-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   24-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   24-block  6
+call   21 never executed
+call   22 never executed
+        1:   24-block  7
+call   23 returned 1
+    $$$$$:   24-block  8
+call   24 never executed
+    $$$$$:   24-block  9
+    $$$$$:   24-block 10
+call   25 never executed
+    $$$$$:   24-block 11
+    $$$$$:   24-block 12
+call   26 never executed
+       1*:   25:    EXPECT_EQ("newText", nota.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   25-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   25-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   25-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   25-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   25-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   25-block  6
+call   21 never executed
+call   22 never executed
+        1:   25-block  7
+call   23 returned 1
+    $$$$$:   25-block  8
+call   24 never executed
+    $$$$$:   25-block  9
+    $$$$$:   25-block 10
+call   25 never executed
+    $$$$$:   25-block 11
+    $$$$$:   25-block 12
+call   26 never executed
+        1:   26:}
+call    0 returned 1
+    $$$$$:   26-block  0
+call    1 never executed
+------------------
+_ZN22Nota_checkSetters_TestC1Ev:
+function _ZN22Nota_checkSetters_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   15:TEST(Nota, checkSetters){
+        1:   15-block  0
+call    0 returned 1
+------------------
+        2:   27:TEST(Nota, checkModify){
+        2:   28:    Nota nota("testTitle", "testText");
+        1:   29:    nota.modify("newTitle","newText", true);
+       1*:   30:    EXPECT_EQ("newTitle", nota.getTitle());
+       1*:   31:    EXPECT_EQ("newText", nota.getText());
+       1*:   32:    EXPECT_TRUE(nota.isBlocked());
+        1:   33:}
+------------------
+_ZN21Nota_checkModify_Test8TestBodyEv:
+function _ZN21Nota_checkModify_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   27:TEST(Nota, checkModify){
+        2:   28:    Nota nota("testTitle", "testText");
+        1:   28-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   28-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   28-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:   28-block  3
+    $$$$$:   28-block  4
+    $$$$$:   28-block  5
+    $$$$$:   28-block  6
+        1:   29:    nota.modify("newTitle","newText", true);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   29-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   29-block  2
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   29-block  3
+call   15 never executed
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+call   16 never executed
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+call   17 never executed
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+call   18 never executed
+    $$$$$:   29-block 10
+       1*:   30:    EXPECT_EQ("newTitle", nota.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   30-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   30-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   30-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   30-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   30-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   30-block  6
+call   21 never executed
+call   22 never executed
+        1:   30-block  7
+call   23 returned 1
+    $$$$$:   30-block  8
+call   24 never executed
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+call   25 never executed
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+call   26 never executed
+       1*:   31:    EXPECT_EQ("newText", nota.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   31-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   31-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   31-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   31-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   31-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   31-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   31-block  6
+call   21 never executed
+call   22 never executed
+        1:   31-block  7
+call   23 returned 1
+    $$$$$:   31-block  8
+call   24 never executed
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+call   25 never executed
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+call   26 never executed
+       1*:   32:    EXPECT_TRUE(nota.isBlocked());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   32-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   32-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   32-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   32-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   32-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:   32-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:   32-block  7
+call   25 returned 1
+    $$$$$:   32-block  8
+    $$$$$:   32-block  9
+call   26 never executed
+    $$$$$:   32-block 10
+    $$$$$:   32-block 11
+call   27 never executed
+    $$$$$:   32-block 12
+    $$$$$:   32-block 13
+call   28 never executed
+    $$$$$:   32-block 14
+    $$$$$:   32-block 15
+call   29 never executed
+        1:   33:}
+call    0 returned 1
+    $$$$$:   33-block  0
+call    1 never executed
+------------------
+_ZN21Nota_checkModify_TestC1Ev:
+function _ZN21Nota_checkModify_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   27:TEST(Nota, checkModify){
+        1:   27-block  0
+call    0 returned 1
+------------------
+        2:   34:TEST(Nota, checkNotModify){
+        2:   35:    Nota nota("testTitle", "testText", true);
+        1:   36:    nota.modify("newTitle","newText", false);
+       1*:   37:    EXPECT_EQ("testTitle", nota.getTitle());
+       1*:   38:    EXPECT_EQ("testText", nota.getText());
+       1*:   39:    EXPECT_TRUE(nota.isBlocked());
+        1:   40:}
+------------------
+_ZN24Nota_checkNotModify_Test8TestBodyEv:
+function _ZN24Nota_checkNotModify_Test8TestBodyEv called 1 returned 100% blocks executed 31%
+        1:   34:TEST(Nota, checkNotModify){
+        2:   35:    Nota nota("testTitle", "testText", true);
+        1:   35-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   35-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   35-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:   35-block  3
+    $$$$$:   35-block  4
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+        1:   36:    nota.modify("newTitle","newText", false);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   36-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   36-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   36-block  2
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+    $$$$$:   36-block  3
+call   15 never executed
+    $$$$$:   36-block  4
+    $$$$$:   36-block  5
+call   16 never executed
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+call   17 never executed
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+call   18 never executed
+    $$$$$:   36-block 10
+       1*:   37:    EXPECT_EQ("testTitle", nota.getTitle());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   37-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   37-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   37-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   37-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   37-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   37-block  6
+call   21 never executed
+call   22 never executed
+        1:   37-block  7
+call   23 returned 1
+    $$$$$:   37-block  8
+call   24 never executed
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+call   25 never executed
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+call   26 never executed
+       1*:   38:    EXPECT_EQ("testText", nota.getText());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   38-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   38-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   38-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   38-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   38-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   38-block  6
+call   21 never executed
+call   22 never executed
+        1:   38-block  7
+call   23 returned 1
+    $$$$$:   38-block  8
+call   24 never executed
+    $$$$$:   38-block  9
+    $$$$$:   38-block 10
+call   25 never executed
+    $$$$$:   38-block 11
+    $$$$$:   38-block 12
+call   26 never executed
+       1*:   39:    EXPECT_TRUE(nota.isBlocked());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   39-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   39-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   39-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   39-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   39-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:   39-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:   39-block  7
+call   25 returned 1
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+call   26 never executed
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+call   27 never executed
+    $$$$$:   39-block 12
+    $$$$$:   39-block 13
+call   28 never executed
+    $$$$$:   39-block 14
+    $$$$$:   39-block 15
+call   29 never executed
+        1:   40:}
+call    0 returned 1
+    $$$$$:   40-block  0
+call    1 never executed
+------------------
+_ZN24Nota_checkNotModify_TestC1Ev:
+function _ZN24Nota_checkNotModify_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:   34:TEST(Nota, checkNotModify){
+        1:   34-block  0
+call    0 returned 1
+------------------
+        -:   41:

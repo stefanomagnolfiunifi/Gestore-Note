@@ -24,7 +24,6 @@ public:
     void block();
     void unblock();
     void modify(const std::string& ti, const std::string& te, bool b);
-    void remove();
     bool operator==(const Nota& n) const;
 private:
     std::string title;

@@ -1,0 +1,60 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/ImportantCollection.cpp
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\CMakeFiles\core.dir\ImportantCollection.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\CMakeFiles\core.dir\ImportantCollection.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Stefano  Magnolfi on 08/08/2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "ImportantCollection.h"
+        -:    6:ImportantCollection* ImportantCollection::instance = nullptr;
+function _ZN19ImportantCollection11getInstanceEv called 3 returned 100% blocks executed 88%
+        3:    7:ImportantCollection* ImportantCollection::getInstance() {
+        3:    8:    if(instance == nullptr)
+        3:    8-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:    9:        instance = new ImportantCollection();
+        1:    9-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    9-block  1
+    $$$$$:    9-block  2
+call    4 never executed
+        3:   10:    return instance;
+        3:   10-block  0
+        3:   10-block  1
+        -:   11:}
+        -:   12:
+function _ZN19ImportantCollection7addNoteER4Nota called 1 returned 100% blocks executed 100%
+        1:   13:void ImportantCollection::addNote(Nota &nota) {
+        1:   14:    if(!nota.isImportant()){
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   15:        Collection::addNote(nota);
+        1:   15-block  0
+call    0 returned 1
+        1:   16:        nota.setImportant();
+call    0 returned 1
+        -:   17:    }
+        1:   18:}
+        -:   19:
+function _ZN19ImportantCollection10removeNoteER4Nota called 1 returned 100% blocks executed 83%
+        1:   20:bool ImportantCollection::removeNote(Nota &nota) {
+        1:   21:    if(Collection::removeNote(nota)){
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   22:        nota.setNotImportant();
+        1:   22-block  0
+call    0 returned 1
+        1:   23:        return true;
+        -:   24:    }
+    #####:   25:    return false;
+    %%%%%:   25-block  0
+        -:   26:}

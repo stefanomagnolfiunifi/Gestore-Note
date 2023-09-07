@@ -1,0 +1,103 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/VariousCollection.h
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\CounterObserverTest.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\CounterObserverTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Stefano  Magnolfi on 08/08/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef GESTORENOTE_VARIOUSCOLLECTION_H
+        -:    6:#define GESTORENOTE_VARIOUSCOLLECTION_H
+        -:    7:
+        -:    8:#include <iostream>
+        -:    9:#include "Collection.h"
+        -:   10:#include "Subject.h"
+        -:   11:
+        -:   12:class VariousCollection : public Collection, public Subject{
+        -:   13:public:
+function _ZN17VariousCollectionC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   14:    explicit VariousCollection(const std::string& n): Collection(n){};
+    %%%%%:   14-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+function _ZNK17VariousCollection12getObserversB5cxx11Ev called 4 returned 100% blocks executed 100%
+        4:   15:    const std::list<Observer *> &getObservers() const {
+        4:   16:        return observers;
+        4:   16-block  0
+        -:   17:    }
+        -:   18:
+function _ZN17VariousCollection7addNoteER4Nota called 0 returned 0% blocks executed 0%
+    #####:   19:    void addNote(Nota& nota) override{
+    #####:   20:        if(!nota.isBelonged()){
+    %%%%%:   20-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   21:            Collection::addNote(nota);
+    %%%%%:   21-block  0
+call    0 never executed
+    #####:   22:            nota.setBelong();
+call    0 never executed
+    #####:   23:            notify();
+call    0 never executed
+        -:   24:        }
+    #####:   25:    }
+function _ZN17VariousCollection10removeNoteER4Nota called 0 returned 0% blocks executed 0%
+    #####:   26:    bool removeNote(Nota& nota) override{
+    #####:   27:        if(Collection::removeNote(nota)){
+    %%%%%:   27-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   28:            nota.setNotBelong();
+    %%%%%:   28-block  0
+call    0 never executed
+    #####:   29:            notify();
+call    0 never executed
+    #####:   30:            return true;
+        -:   31:        }
+    #####:   32:        return false;
+    %%%%%:   32-block  0
+        -:   33:    }
+function _ZN17VariousCollection11addObserverEP8Observer called 0 returned 0% blocks executed 0%
+    #####:   34:    void addObserver(Observer* o) override{
+    #####:   35:        observers.push_back(o);
+    %%%%%:   35-block  0
+call    0 never executed
+    #####:   36:    }
+function _ZN17VariousCollection14removeObserverEP8Observer called 0 returned 0% blocks executed 0%
+    #####:   37:    void removeObserver(Observer* o) override{
+    #####:   38:        observers.remove(o);
+    %%%%%:   38-block  0
+call    0 never executed
+    #####:   39:    }
+function _ZN17VariousCollection6notifyEv called 0 returned 0% blocks executed 0%
+    #####:   40:    void notify() override{
+    #####:   41:        for(auto x:observers){
+    %%%%%:   41-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   41-block  1
+call    2 never executed
+    %%%%%:   41-block  2
+call    3 never executed
+    %%%%%:   41-block  3
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    #####:   42:            x->update(static_cast<int> (notesList.size()));
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:   43:        }
+    #####:   44:    }
+    %%%%%:   44-block  0
+        -:   45:private:
+        -:   46:    std::list<Observer*> observers;
+        -:   47:};
+        -:   48:
+        -:   49:
+        -:   50:
+        -:   51:#endif //GESTORENOTE_VARIOUSCOLLECTION_H

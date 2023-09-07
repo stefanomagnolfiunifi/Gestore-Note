@@ -13,8 +13,15 @@ public:
     explicit CounterObserver(VariousCollection* c): noteCount(0), collection(c){
         collection->addObserver(this);
     };
-    ~CounterObserver(){
+    ~CounterObserver() override{
         collection->removeObserver(this);
+    }
+    int getNoteCount() const {
+        return noteCount;
+    }
+
+    void setNoteCount(int noteCount) {
+        CounterObserver::noteCount = noteCount;
     }
     void update(int c) override{
         noteCount = c;

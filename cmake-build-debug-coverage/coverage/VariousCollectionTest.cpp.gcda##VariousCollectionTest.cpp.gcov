@@ -1,0 +1,220 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/test/VariousCollectionTest.cpp
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\VariousCollectionTest.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\VariousCollectionTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../VariousCollection.h"
+        -:    3:#include "../CounterObserver.h"
+        -:    4:
+        2:    5:TEST(VariousCollection, checkAddRemoveNote){
+        2:    6:    Nota nota("testTitle", "testText");
+        2:    7:    VariousCollection collection("testCollection");
+       1*:    8:    EXPECT_FALSE(nota.isBelonged());
+        1:    9:    collection.addNote(nota);
+       1*:   10:    EXPECT_TRUE(nota.isBelonged());
+        1:   11:    collection.removeNote(nota);
+       1*:   12:    EXPECT_FALSE(nota.isBelonged());
+        1:   13:}
+------------------
+_ZN41VariousCollection_checkAddRemoveNote_Test8TestBodyEv:
+function _ZN41VariousCollection_checkAddRemoveNote_Test8TestBodyEv called 1 returned 100% blocks executed 28%
+        1:    5:TEST(VariousCollection, checkAddRemoveNote){
+        2:    6:    Nota nota("testTitle", "testText");
+        1:    6-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    6-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:    6-block  2
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:    6-block  3
+    $$$$$:    6-block  4
+    $$$$$:    6-block  5
+    $$$$$:    6-block  6
+        2:    7:    VariousCollection collection("testCollection");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:    7-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+call    7 returned 1
+    $$$$$:    7-block  1
+    $$$$$:    7-block  2
+       1*:    8:    EXPECT_FALSE(nota.isBelonged());
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:    8-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:    8-block  1
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:    8-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:    8-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:    8-block  4
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:    8-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:    8-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:    8-block  7
+call   25 returned 1
+    $$$$$:    8-block  8
+    $$$$$:    8-block  9
+call   26 never executed
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+call   27 never executed
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+call   28 never executed
+    $$$$$:    8-block 14
+    $$$$$:    8-block 15
+call   29 never executed
+        1:    9:    collection.addNote(nota);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   10:    EXPECT_TRUE(nota.isBelonged());
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   10-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   10-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   10-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   10-block  5
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   10-block  6
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:   10-block  7
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:   10-block  8
+call   25 returned 1
+    $$$$$:   10-block  9
+    $$$$$:   10-block 10
+call   26 never executed
+    $$$$$:   10-block 11
+    $$$$$:   10-block 12
+call   27 never executed
+    $$$$$:   10-block 13
+    $$$$$:   10-block 14
+call   28 never executed
+    $$$$$:   10-block 15
+    $$$$$:   10-block 16
+call   29 never executed
+        1:   11:    collection.removeNote(nota);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   12:    EXPECT_FALSE(nota.isBelonged());
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   12-block  2
+call    6 returned 1
+branch  7 taken 0 (fallthrough)
+branch  8 taken 1
+    %%%%%:   12-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   12-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   12-block  5
+call   15 never executed
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:   12-block  6
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:   12-block  7
+call   22 never executed
+call   23 never executed
+call   24 never executed
+        1:   12-block  8
+call   25 returned 1
+    $$$$$:   12-block  9
+    $$$$$:   12-block 10
+call   26 never executed
+    $$$$$:   12-block 11
+    $$$$$:   12-block 12
+call   27 never executed
+    $$$$$:   12-block 13
+    $$$$$:   12-block 14
+call   28 never executed
+    $$$$$:   12-block 15
+    $$$$$:   12-block 16
+call   29 never executed
+        1:   13:}
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   13-block  0
+call    2 never executed
+    $$$$$:   13-block  1
+call    3 never executed
+------------------
+_ZN41VariousCollection_checkAddRemoveNote_TestC1Ev:
+function _ZN41VariousCollection_checkAddRemoveNote_TestC1Ev called 1 returned 100% blocks executed 100%
+        1:    5:TEST(VariousCollection, checkAddRemoveNote){
+        1:    5-block  0
+call    0 returned 1
+------------------

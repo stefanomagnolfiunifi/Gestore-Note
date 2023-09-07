@@ -1,0 +1,44 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/ImportantCollection.h
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\CMakeFiles\core.dir\ImportantCollection.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\CMakeFiles\core.dir\ImportantCollection.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Stefano  Magnolfi on 08/08/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef GESTORENOTE_IMPORTANTCOLLECTION_H
+        -:    6:#define GESTORENOTE_IMPORTANTCOLLECTION_H
+        -:    7:
+        -:    8:#include <list>
+        -:    9:#include "Collection.h"
+        -:   10:#include "Observer.h"
+        -:   11:class ImportantCollection : public Collection{
+        -:   12:public:
+        -:   13:    static ImportantCollection* getInstance();
+        -:   14:    void addNote(Nota &nota) override;
+        -:   15:    bool removeNote(Nota &nota) override;
+        -:   16:private:
+function _ZN19ImportantCollectionC1Ev called 1 returned 100% blocks executed 58%
+        1:   17:    ImportantCollection(): Collection("Importants"){};
+        1:   17-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   17-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   17-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   17-block  3
+call    9 never executed
+    $$$$$:   17-block  4
+    $$$$$:   17-block  5
+call   10 never executed
+        -:   18:    static ImportantCollection* instance;
+        -:   19:};
+        -:   20:
+        -:   21:
+        -:   22:#endif //GESTORENOTE_IMPORTANTCOLLECTION_H

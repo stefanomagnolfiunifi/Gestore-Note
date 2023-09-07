@@ -1,0 +1,50 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/Nota.h
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\ImportantCollectionTest.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\ImportantCollectionTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Stefano  Magnolfi on 08/08/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef GESTORENOTE_NOTA_H
+        -:    6:#define GESTORENOTE_NOTA_H
+        -:    7:
+        -:    8:#include <iostream>
+        -:    9:#include <list>
+        -:   10:class Nota {
+        -:   11:public:
+function _ZN4NotaC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_b called 9 returned 100% blocks executed 80%
+        9:   12:    Nota(const std::string& title,const std::string& text, bool blocked = false): title(title), text(text), blocked(blocked){};
+        9:   12-block  0
+call    0 returned 9
+call    1 returned 9
+branch  2 taken 9 (fallthrough)
+branch  3 taken 0 (throw)
+        9:   12-block  1
+    $$$$$:   12-block  2
+call    4 never executed
+        -:   13:    const std::string &getTitle() const;
+        -:   14:    void setTitle(const std::string &title);
+        -:   15:    const std::string &getText() const;
+        -:   16:    void setText(const std::string &text);
+        -:   17:    bool isBlocked() const;
+        -:   18:    bool isBelonged() const;
+        -:   19:    bool isImportant() const;
+        -:   20:    void setImportant();
+        -:   21:    void setNotImportant();
+        -:   22:    void setBelong();
+        -:   23:    void setNotBelong();
+        -:   24:    void block();
+        -:   25:    void unblock();
+        -:   26:    void modify(const std::string& ti, const std::string& te, bool b);
+        -:   27:    bool operator==(const Nota& n) const;
+        -:   28:private:
+        -:   29:    std::string title;
+        -:   30:    std::string text;
+        -:   31:    bool blocked;
+        -:   32:    bool belongToCollection = false;
+        -:   33:    bool important = false;
+        -:   34:};
+        -:   35:
+        -:   36:
+        -:   37:#endif //GESTORENOTE_NOTA_H

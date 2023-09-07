@@ -11,7 +11,11 @@
 
 class VariousCollection : public Collection, public Subject{
 public:
-    explicit VariousCollection(const std::string& n):Collection(n){};
+    explicit VariousCollection(const std::string& n): Collection(n){};
+    const std::list<Observer *> &getObservers() const {
+        return observers;
+    }
+
     void addNote(Nota& nota) override{
         if(!nota.isBelonged()){
             Collection::addNote(nota);

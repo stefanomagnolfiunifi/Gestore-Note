@@ -1,0 +1,18 @@
+        -:    0:Source:C:/Users/stefa/CLionProjects/Gestore-Note/Observer.h
+        -:    0:Graph:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\CounterObserverTest.cpp.gcno
+        -:    0:Data:C:\Users\stefa\CLionProjects\Gestore-Note\cmake-build-debug-coverage\test\CMakeFiles\runTests.dir\CounterObserverTest.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Stefano  Magnolfi on 08/08/2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef GESTORENOTE_OBSERVER_H
+        -:    6:#define GESTORENOTE_OBSERVER_H
+        -:    7:
+        -:    8:class Observer{
+        -:    9:public:
+function _ZN8ObserverD2Ev called 3 returned 100% blocks executed 100%
+        3:   10:    virtual ~Observer() = default;
+        -:   11:    virtual void update(int c) = 0 ;
+        -:   12:};
+        -:   13:#endif //GESTORENOTE_OBSERVER_H

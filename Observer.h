@@ -7,6 +7,7 @@
 
 class Observer{
 public:
+    virtual ~Observer() = default;
     virtual void update(int c) = 0 ;
 };
 #endif //GESTORENOTE_OBSERVER_H
